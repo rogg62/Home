@@ -1,0 +1,217 @@
+#footer {
+  width: 100%;
+  height: 417px;
+  background: #333;
+  margin-top: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 51px;
+}
+
+#TopFooter {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+#TopFooter #Logo {
+  width: auto;
+  height: 100%;
+  margin-right: 126px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#TopFooter #Logo button {
+  width: 135px;
+  height: 64px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #fff;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 75% */
+  letter-spacing: 0.8px;
+}
+
+#TopFooter #information {
+  width: 154px;
+  height: 229px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+#TopFooter #information h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#TopFooter #information a {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-decoration: none;
+}
+
+#TopFooter #social {
+  width: 187.726px;
+  height: 63px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+#TopFooter #social h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#TopFooter #social #LinksImgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#TopFooter #contact {
+  width: 231.701px;
+  height: 213px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+  margin: 0 76.3px 0 108px;
+}
+
+#TopFooter #contact h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#TopFooter #contact #contact1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 19.18px;
+}
+
+#TopFooter #contact #contact1 img {
+  width: 11.102px;
+  height: 16px;
+}
+
+#TopFooter #contact #contact1 span {
+  width: 150px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+#TopFooter #contact #contact2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 19.18px;
+}
+
+#TopFooter #contact #contact2 span {
+  width: 150px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+#TopFooter #contact #contact2 img {
+  width: 16.159px;
+  height: 16px;
+}
+
+#TopFooter #contact #contact3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 19.18px;
+}
+
+#TopFooter #contact #contact3 span {
+  width: 150px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+#TopFooter #contact #contact3 img {
+  width: 16.148px;
+  height: 11px;
+}
+
+#BottomFooter {
+  border-top: 1px solid #ffffff;
+  width: 1007px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#BottomFooter h1 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 17px 0 28px 0;
+}
