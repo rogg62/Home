@@ -1,0 +1,114 @@
+#Projects {
+  width: 1180px;
+  height: 681px;
+  margin-top: 191px;
+  margin-bottom: 100px;
+}
+
+#ProjectsTitle {
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ProjectsTitle h1 {
+  color: #333;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#ProjectsTitle button {
+  width: 221px;
+  height: 71px;
+  border: none;
+  background: #333;
+  color: #fff;
+ 
+}
+
+#ProjectsBox {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+#ProjectsBox #Box1 {
+  width: 547.857px;
+  height: 255px;
+  margin-right: 33.14px;
+  background: url(./assets/image\ 42.png)no-repeat center;
+}
+
+#ProjectsBox #Box2 {
+  width: 546.8px;
+  height: 255px;
+  background: url(./assets/image\ 39.png)no-repeat center;
+}
+
+#ProjectsBox #Box3 {
+  width: 231.79px;
+  height: 255px;
+  background: url(./assets/image\ 43.jpg)no-repeat center;
+}
+
+#ProjectsBox #Box4 {
+  width: 495.18px;
+  height: 255px;
+  background: url(./assets/image\ 41.png)no-repeat center;
+  margin: 0 31.84px 0 24.2px;
+}
+
+#ProjectsBox #Box5 {
+  width: 389.82px;
+  height: 255px;
+  background: url(./assets/image\ 40.jpg)no-repeat center;
+}
+
+#ProjectsTitle button {
+    min-width: 221px;
+    height: 71px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #495057;
+    color: #495057;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+#ProjectsTitle button:hover {
+    color: #fff;
+  }
+#ProjectsTitle button:hover:after {
+    width: 100%;
+  }
+#ProjectsTitle button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #333;
+  }

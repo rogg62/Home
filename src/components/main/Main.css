@@ -1,0 +1,57 @@
+#main {
+  width: 1178px;
+  height: 453px;
+  margin-top: 99px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#LeftMain {
+  width: 603px;
+  height: 453px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#LeftMainImgs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#LeftMain p {
+  width: 603px;
+  height: 40px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+#LeftMain button {
+  margin-top: 35px;
+  width: 130px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+
+  color: #333;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
