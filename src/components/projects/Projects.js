@@ -1,5 +1,10 @@
 import React from "react";
 import "./Projects.css";
+import Img1 from "./assets/image 39.png"
+import Img2 from "./assets/image 42.png"
+import Img3 from "./assets/image 43.jpg"
+import Img4 from "./assets/image 41.png"
+import Img5 from "./assets/image 40.jpg"
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -123,11 +128,45 @@ const Projects = () => {
       </div>
 
       <div id="ProjectsBox">
-        <div id="Box1" className="Item1"></div>
-        <div id="Box2" className="Item2"></div>
-        <div id="Box3" className="Item3"></div>
-        <div id="Box4" className="Item4"></div>
-        <div id="Box5" className="Item5"></div>
+        <div id="Box1" className="Item1">
+          <img src={Img2} alt="" />
+          <div className="BoxInfo">
+            <h1>Mountain</h1>
+            <span>Colorado</span>
+          </div>
+        </div>
+
+        <div id="Box2" className="Item2">
+          <img src={Img1} alt="" />
+          <div className="BoxInfo">
+            <h1>Desert</h1>
+            <span>Arizona</span>
+          </div>
+        </div>
+
+        <div id="Box3" className="Item3">
+          <img src={Img3} alt="" />
+          <div className="BoxInfo">
+            <h1>Hill</h1>
+            <span>Dakota</span>
+          </div>
+        </div>
+
+        <div id="Box4" className="Item4">
+          <img src={Img4} alt="" />
+          <div className="BoxInfo">
+            <h1>Florest</h1>
+            <span>Alasca</span>
+          </div>
+        </div>
+
+        <div id="Box5" className="Item5">
+          <img src={Img5} alt="" />
+          <div className="BoxInfo">
+            <h1>Swamp</h1>
+            <span>Miami</span>
+          </div>
+        </div>
       </div>
     </div>
   );

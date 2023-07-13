@@ -28,7 +28,6 @@
   border: none;
   background: #333;
   color: #fff;
- 
 }
 
 #ProjectsBox {
@@ -42,72 +41,437 @@
   width: 547.857px;
   height: 255px;
   margin-right: 33.14px;
-  background: url(./assets/image\ 42.png)no-repeat center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+}
+
+#ProjectsBox #Box1:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ProjectsBox #Box1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#ProjectsBox #Box1:hover:before {
+  opacity: 1;
+}
+
+#ProjectsBox #Box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ProjectsBox #Box1 .BoxInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+#ProjectsBox #Box1:hover .BoxInfo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#ProjectsBox #Box1 .BoxInfo h1 {
+  margin: 0 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+#ProjectsBox #Box1 .BoxInfo span {
+  margin: 8px 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 #ProjectsBox #Box2 {
   width: 546.8px;
   height: 255px;
-  background: url(./assets/image\ 39.png)no-repeat center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+}
+
+#ProjectsBox #Box2:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ProjectsBox #Box2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#ProjectsBox #Box2:hover:before {
+  opacity: 1;
+}
+
+#ProjectsBox #Box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ProjectsBox #Box2 .BoxInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+#ProjectsBox #Box2:hover .BoxInfo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#ProjectsBox #Box2 .BoxInfo h1 {
+  margin: 0 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+#ProjectsBox #Box2 .BoxInfo span {
+  margin: 8px 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 #ProjectsBox #Box3 {
   width: 231.79px;
   height: 255px;
-  background: url(./assets/image\ 43.jpg)no-repeat center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+}
+
+#ProjectsBox #Box3:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ProjectsBox #Box3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#ProjectsBox #Box3:hover:before {
+  opacity: 1;
+}
+
+#ProjectsBox #Box3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ProjectsBox #Box3 .BoxInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+#ProjectsBox #Box3:hover .BoxInfo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#ProjectsBox #Box3 .BoxInfo h1 {
+  margin: 0 0 0 15px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+#ProjectsBox #Box3 .BoxInfo span {
+  margin: 3px 0 0 15px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 #ProjectsBox #Box4 {
   width: 495.18px;
   height: 255px;
-  background: url(./assets/image\ 41.png)no-repeat center;
   margin: 0 31.84px 0 24.2px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+}
+
+#ProjectsBox #Box4:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ProjectsBox #Box4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#ProjectsBox #Box4:hover:before {
+  opacity: 1;
+}
+
+#ProjectsBox #Box4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ProjectsBox #Box4 .BoxInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+#ProjectsBox #Box4:hover .BoxInfo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#ProjectsBox #Box4 .BoxInfo h1 {
+  margin: 0 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+#ProjectsBox #Box4 .BoxInfo span {
+  margin: 8px 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 #ProjectsBox #Box5 {
   width: 389.82px;
   height: 255px;
-  background: url(./assets/image\ 40.jpg)no-repeat center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+}
+
+#ProjectsBox #Box5:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ProjectsBox #Box5:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#ProjectsBox #Box5:hover:before {
+  opacity: 1;
+}
+
+#ProjectsBox #Box5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ProjectsBox #Box5 .BoxInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+#ProjectsBox #Box5:hover .BoxInfo {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#ProjectsBox #Box5 .BoxInfo h1 {
+  margin: 0 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+#ProjectsBox #Box5 .BoxInfo span {
+  margin: 8px 0 0 35px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 #ProjectsTitle button {
-    min-width: 221px;
-    height: 71px;
-    color: #333;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    z-index: 0;
-    background: #fff;
-    overflow: hidden;
-    border: 2px solid #495057;
-    color: #495057;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-  }
+  min-width: 221px;
+  height: 71px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #495057;
+  color: #495057;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
 #ProjectsTitle button:hover {
-    color: #fff;
-  }
+  color: #fff;
+}
 #ProjectsTitle button:hover:after {
-    width: 100%;
-  }
+  width: 100%;
+}
 #ProjectsTitle button:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: #333;
-  }
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #333;
+}
