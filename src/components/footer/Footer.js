@@ -47,16 +47,16 @@ const Footer = () => {
           <h1>Social Media</h1>
           <div id="LinksImgs">
             <a href="Facebook">
-              <img src={Facebook} alt="" />
+              <img src={Facebook} alt="" title="Facebook"/>
             </a>
             <a href="Twitter">
-              <img src={Twitter} alt="" />
+              <img src={Twitter} alt="" title="Twitter"/>
             </a>
             <a href="Linkedin">
-              <img src={Linkedin} alt="" />
+              <img src={Linkedin} alt="" title="Linkedin" />
             </a>
             <a href="Pinterest">
-              <img src={Pinterest} alt="" />
+              <img src={Pinterest} alt="" title="Pinterest" />
             </a>
           </div>
         </div>

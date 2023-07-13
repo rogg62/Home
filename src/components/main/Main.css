@@ -38,11 +38,12 @@
 
 #LeftMain button {
   margin-top: 35px;
-  width: 130px;
+  width: 180px;
   height: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 14px;
   background: transparent;
   border: none;
 

@@ -2,6 +2,7 @@ import React from "react";
 import FirstImg from "./assets/image 21.png";
 import SecondImg from "./assets/image 26.png";
 import ThirdImg from "./assets/image 25.png";
+import Arrow from "./assets/ico-shape.svg"
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./Main.css";
@@ -60,7 +61,7 @@ const Main = () => {
         </div>
 
         <button ref={(el) => (elementRefs.current[3] = el)}>
-          Explore More
+          Explore More <img src={Arrow} alt="" />
         </button>
       </div>
     </main>
