@@ -53,3 +53,25 @@
     width: 315px;
   }
 }
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #About {
+    width: 690px;
+    height: auto;
+    margin-top: 75px;
+    align-items: flex-start;
+  }
+
+  #AboutImgs {
+    flex-direction: column-reverse;
+  }
+
+  #AboutImgs img {
+    width: 315px;
+    height: 300px;
+  }
+
+  #AboutInfo {
+    width: 355px;
+  }
+}

@@ -74,3 +74,40 @@
     height: auto;
   }
 }
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #main {
+    width: 690px;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  #main #ImgMain {
+    width: 400px;
+  }
+
+  #LeftMain {
+    width: 290px;
+    height: auto;
+  }
+
+  #LeftMainImgs {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #LeftMain #Img1{
+    width: 280px;
+  }
+
+  #LeftMain #Img2 {
+    display: none;
+  }
+
+  #LeftMain p {
+    width: 90%;
+    margin-left: 10px;
+    text-align: left;
+    height: auto;
+  }
+}

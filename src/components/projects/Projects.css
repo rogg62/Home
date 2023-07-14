@@ -497,5 +497,32 @@
   #ProjectsBox #Box5 {
     width: 30%;
   }
+}
 
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #Projects {
+    width: 690px;
+    height: auto;
+    margin-top: 75px;
+  }
+
+  #ProjectsBox #Box1 {
+    width: 45%;
+  }
+
+  #ProjectsBox #Box2 {
+    width: 50%;
+  }
+
+  #ProjectsBox #Box3 {
+    width: 50%;
+  }
+
+  #ProjectsBox #Box4 {
+    width: 40%;
+  }
+
+  #ProjectsBox #Box5 {
+    width: 100%;
+  }
 }

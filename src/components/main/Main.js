@@ -41,7 +41,7 @@ const Main = () => {
   }, []);
   return (
     <main id="main">
-      <img src={FirstImg} alt="" ref={(el) => (elementRefs.current[5] = el)} />
+      <img src={FirstImg} id="ImgMain" alt="" ref={(el) => (elementRefs.current[5] = el)} />
       <div id="LeftMain">
         <p ref={(el) => (elementRefs.current[0] = el)}>
           A trusted source for modern, luxury tiny homes. Our team of
@@ -50,11 +50,13 @@ const Main = () => {
         <div id="LeftMainImgs">
           <img
             src={SecondImg}
+            id="Img1"
             alt=""
             ref={(el) => (elementRefs.current[1] = el)}
           />
           <img
             src={ThirdImg}
+            id="Img2"
             alt=""
             ref={(el) => (elementRefs.current[2] = el)}
           />

@@ -39,7 +39,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 12px; /* 75% */
+  line-height: 12px;
   letter-spacing: 0.8px;
 }
 
@@ -221,12 +221,38 @@
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
-
   #TopFooter {
     width: 980px;
   }
 
   #BottomFooter {
     width: 980px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #footer {
+    height: auto;
+    margin-top: 70px;
+  }
+
+  #TopFooter {
+    width: 690px;
+    height: auto;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #TopFooter #contact {
+    margin: 0;
+  }
+
+  #TopFooter #Logo {
+    margin: 0;
+  }
+
+  #BottomFooter {
+    width: 600px;
   }
 }

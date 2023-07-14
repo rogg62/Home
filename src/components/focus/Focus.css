@@ -56,6 +56,7 @@
 #FocusBoxs #Box1 #BoxInfo {
   width: 308.258px;
   height: auto;
+
 }
 
 #FocusBoxs #Box1 #BoxInfo h1 {
@@ -104,6 +105,7 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  
 }
 
 #FocusBoxs #Box2 #BoxInfo2 {
@@ -145,5 +147,34 @@
 
   #FocusBoxs #Box2 {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #Focus {
+    width: 690px;
+    height: auto;
+    margin-top: 71px;
+  }
+
+  #FocusBoxs {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #FocusBoxs #Box1 {
+    width: 90%;
+    height: auto;
+    justify-content: left;
+    gap: 40px;
+  }
+
+  #FocusBoxs #Box2 {
+    width: 90%;
+    height: auto;
+  }
+
+  #FocusBoxs #Box2 h1 {
+    margin: 0;
   }
 }

@@ -66,3 +66,19 @@
     margin-right: 50px;
   }
 }
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #Title {
+    width: 690px;
+    height: auto;
+  }
+
+  #Title h1 {
+    width: 800px;
+    margin: 0;
+  }
+
+  #circle {
+    margin: 0 60px 60px 0;
+  }
+}
