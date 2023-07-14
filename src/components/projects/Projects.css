@@ -475,3 +475,27 @@
   height: 100%;
   background: #333;
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  #Projects {
+    width: 980px;
+    height: auto;
+  }
+
+  #ProjectsBox #Box1 {
+    width: 45%;
+  }
+
+  #ProjectsBox #Box2 {
+    width: 50%;
+  }
+
+  #ProjectsBox #Box4 {
+    width: 40%;
+  }
+
+  #ProjectsBox #Box5 {
+    width: 30%;
+  }
+
+}

@@ -50,3 +50,19 @@
   font-weight: 400;
   line-height: normal;
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  #Title {
+    width: 980px;
+    height: auto;
+  }
+
+  #Title h1 {
+    width: 800px;
+    margin: 0;
+  }
+
+  #circle {
+    margin-right: 50px;
+  }
+}

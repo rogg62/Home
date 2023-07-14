@@ -133,3 +133,17 @@
   width: 300px;
   margin: 0;
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  #Focus {
+    width: 980px;
+  }
+
+  #FocusBoxs #Box1 {
+    width: 50%;
+  }
+
+  #FocusBoxs #Box2 {
+    width: 50%;
+  }
+}
