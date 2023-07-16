@@ -256,3 +256,31 @@
     width: 600px;
   }
 }
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  #footer {
+    height: auto;
+    margin-top: 70px;
+  }
+
+  #TopFooter {
+    width: 500px;
+    height: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-around;
+  }
+
+  #TopFooter #contact {
+    margin: 0;
+  }
+
+  #TopFooter #Logo {
+    margin: 100px 0 0 0;
+  }
+
+  #BottomFooter {
+    width: 500px;
+  }
+}

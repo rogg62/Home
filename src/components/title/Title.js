@@ -1,30 +1,51 @@
 import React from "react";
 import "./Title.css";
-import { useEffect, useRef } from "react";
+import { useWindowSize } from "react-use";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import Circle from "./assets/Voted best real estate office.png";
 
 const Title = () => {
+  const { width } = useWindowSize();
+  const larguraMinima = 701;
+  const larguraMaxima = 10000;
   const elementRefs = useRef([]);
 
-  useEffect(() => {
-    // Animação a ser executada quando a tela for recarregada
-    gsap.fromTo(
-      elementRefs.current[0],
-      { opacity: 0, x: -100 },
-      { opacity: 1, duration: 1, delay: 1, x: 0 }
-    );
-    gsap.fromTo(
-      elementRefs.current[1],
-      { opacity: 0 },
-      { opacity: 1, duration: 1, delay: 1.5 }
-    );
-    gsap.fromTo(
-      elementRefs.current[2],
-      { opacity: 0 },
-      { opacity: 1, duration: 1, delay: 4 }
-    );
-  }, []);
+  React.useEffect(() => {
+    if (width >= larguraMinima && width <= larguraMaxima) {
+      gsap.fromTo(
+        elementRefs.current[0],
+        { opacity: 0, x: -100 },
+        { opacity: 1, duration: 1, delay: 1, x: 0 }
+      );
+      gsap.fromTo(
+        elementRefs.current[1],
+        { opacity: 0 },
+        { opacity: 1, duration: 1, delay: 1.5 }
+      );
+      gsap.fromTo(
+        elementRefs.current[2],
+        { opacity: 0 },
+        { opacity: 1, duration: 1, delay: 4 }
+      );
+    } else {
+      gsap.fromTo(
+        elementRefs.current[0],
+        { opacity: 0, x: -100 },
+        { opacity: 1, duration: 1, delay: 1, x: 0 }
+      );
+      gsap.fromTo(
+        elementRefs.current[1],
+        { opacity: 0 },
+        { opacity: 1, duration: 1, delay: 1 }
+      );
+      gsap.fromTo(
+        elementRefs.current[2],
+        { opacity: 0 },
+        { opacity: 1, duration: 1, delay: 2.5 }
+      );
+    }
+  }, [width]);
   return (
     <div id="Title">
       <h1 ref={(el) => (elementRefs.current[0] = el)}>

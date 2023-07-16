@@ -526,3 +526,44 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  #Projects {
+    width: 500px;
+    height: auto;
+    margin-top: 95px;
+  }
+
+  #Projects #ProjectsBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #Projects #ProjectsTitle {
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #ProjectsBox #Box1 {
+    width: 450px;
+    margin: 0;
+  }
+
+  #ProjectsBox #Box2 {
+    width: 450px;
+  }
+
+  #ProjectsBox #Box3 {
+    display: none;
+  }
+
+  #ProjectsBox #Box4 {
+    width: 450px;
+    margin: 0;
+  }
+
+  #ProjectsBox #Box5 {
+    width: 450px;
+  }
+}

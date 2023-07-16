@@ -82,3 +82,23 @@
     margin: 0 60px 60px 0;
   }
 }
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  #Title {
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+  }
+
+  #Title h1 {
+    width: 800px;
+    margin: 0;
+  }
+
+  #circle {
+    position: absolute;
+    top: 270px;
+    left: 390px;
+  }
+}
