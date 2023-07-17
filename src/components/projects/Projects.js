@@ -1,125 +1,131 @@
 import React from "react";
 import "./Projects.css";
-import Img1 from "./assets/image 39.png"
-import Img2 from "./assets/image 42.png"
-import Img3 from "./assets/image 43.jpg"
-import Img4 from "./assets/image 41.png"
-import Img5 from "./assets/image 40.jpg"
-import { useLayoutEffect, useRef } from "react";
+import Img1 from "./assets/image 39.png";
+import Img2 from "./assets/image 42.png";
+import Img3 from "./assets/image 43.jpg";
+import Img4 from "./assets/image 41.png";
+import Img5 from "./assets/image 40.jpg";
+import { useRef } from "react";
+import { useWindowSize } from "react-use";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
+  const { width } = useWindowSize();
+  const larguraMinima = 701;
+  const larguraMaxima = 10000;
   const main = useRef();
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context((self) => {
-      const boxes = self.selector(".Title");
-      const boxes1 = self.selector(".Item1");
-      const boxes2 = self.selector(".Item2");
-      const boxes3 = self.selector(".Item3");
-      const boxes4 = self.selector(".Item4");
-      const boxes5 = self.selector(".Item5");
+  React.useLayoutEffect(() => {
+    if (width >= larguraMinima && width <= larguraMaxima) {
+      const ctx = gsap.context((self) => {
+        const boxes = self.selector(".Title");
+        const boxes1 = self.selector(".Item1");
+        const boxes2 = self.selector(".Item2");
+        const boxes3 = self.selector(".Item3");
+        const boxes4 = self.selector(".Item4");
+        const boxes5 = self.selector(".Item5");
 
-      boxes.forEach((Title) => {
-        gsap.fromTo(
-          Title,
-          { opacity: 0, x: -50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: Title,
-              start: "top bottom",
-              end: "top 65%",
-              scrub: true,
-            },
-          }
-        );
-      });
-      boxes1.forEach((item1) => {
-        gsap.fromTo(
-          item1,
-          { opacity: 0, x: -50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: item1,
-              start: "top bottom",
-              end: "top 65%",
-              scrub: true,
-            },
-          }
-        );
-      });
-      boxes2.forEach((item2) => {
-        gsap.fromTo(
-          item2,
-          { opacity: 0 },
-          {
-            opacity: 1,
-            scrollTrigger: {
-              trigger: item2,
-              start: "top bottom",
-              end: "top 50%",
-              scrub: true,
-            },
-          }
-        );
-      });
-      boxes3.forEach((item3) => {
-        gsap.fromTo(
-          item3,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            scrollTrigger: {
-              trigger: item3,
-              start: "top bottom",
-              end: "top 65%",
-              scrub: true,
-            },
-          }
-        );
-      });
-      boxes4.forEach((item4) => {
-        gsap.fromTo(
-          item4,
-          { opacity: 0, x: -50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: item4,
-              start: "top bottom",
-              end: "top 65%",
-              scrub: true,
-            },
-          }
-        );
-      });
-      boxes5.forEach((item5) => {
-        gsap.fromTo(
-          item5,
-          { opacity: 0 },
-          {
-            opacity: 1,
-            scrollTrigger: {
-              trigger: item5,
-              start: "top bottom",
-              end: "top 65%",
-              scrub: true,
-            },
-          }
-        );
-      });
-    }, main);
+        boxes.forEach((Title) => {
+          gsap.fromTo(
+            Title,
+            { opacity: 0, x: -50 },
+            {
+              opacity: 1,
+              x: 0,
+              scrollTrigger: {
+                trigger: Title,
+                start: "top bottom",
+                end: "top 65%",
+                scrub: true,
+              },
+            }
+          );
+        });
+        boxes1.forEach((item1) => {
+          gsap.fromTo(
+            item1,
+            { opacity: 0, x: -50 },
+            {
+              opacity: 1,
+              x: 0,
+              scrollTrigger: {
+                trigger: item1,
+                start: "top bottom",
+                end: "top 65%",
+                scrub: true,
+              },
+            }
+          );
+        });
+        boxes2.forEach((item2) => {
+          gsap.fromTo(
+            item2,
+            { opacity: 0 },
+            {
+              opacity: 1,
+              scrollTrigger: {
+                trigger: item2,
+                start: "top bottom",
+                end: "top 50%",
+                scrub: true,
+              },
+            }
+          );
+        });
+        boxes3.forEach((item3) => {
+          gsap.fromTo(
+            item3,
+            { opacity: 0, y: 50 },
+            {
+              opacity: 1,
+              y: 0,
+              scrollTrigger: {
+                trigger: item3,
+                start: "top bottom",
+                end: "top 65%",
+                scrub: true,
+              },
+            }
+          );
+        });
+        boxes4.forEach((item4) => {
+          gsap.fromTo(
+            item4,
+            { opacity: 0, x: -50 },
+            {
+              opacity: 1,
+              x: 0,
+              scrollTrigger: {
+                trigger: item4,
+                start: "top bottom",
+                end: "top 65%",
+                scrub: true,
+              },
+            }
+          );
+        });
+        boxes5.forEach((item5) => {
+          gsap.fromTo(
+            item5,
+            { opacity: 0 },
+            {
+              opacity: 1,
+              scrollTrigger: {
+                trigger: item5,
+                start: "top bottom",
+                end: "top 65%",
+                scrub: true,
+              },
+            }
+          );
+        });
+      }, main);
 
-    return () => ctx.revert();
-  }, []);
+      return () => ctx.revert();
+    }
+  }, [width]);
   return (
     <div id="Projects" ref={main}>
       <div id="ProjectsTitle">

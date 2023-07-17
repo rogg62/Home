@@ -126,3 +126,52 @@
     flex-direction: column;
   }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  #About {
+    width: 320px;
+    height: auto;
+    height: auto;
+    gap: 40px;
+    flex-direction: column;
+    margin-top: 75px;
+  }
+
+  #AboutImgs {
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    gap: 0;
+  }
+
+  #AboutImgs img {
+    width: 100%;
+    height: auto;
+  }
+
+  #AboutImgs .Img2 {
+    display: none;
+  }
+
+  #AboutInfo {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  #AboutInfo h1{
+    font-size: 50px;
+  }
+
+  #AboutInfo .Paragraf {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  #AboutInfo .Paragraf p{
+    font-size: 15px;
+  }
+}

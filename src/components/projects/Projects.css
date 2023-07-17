@@ -567,3 +567,82 @@
     width: 450px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  #Projects {
+    width: 320px;
+    height: auto;
+    margin-top: 95px;
+  }
+
+  #Projects #ProjectsBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #Projects #ProjectsTitle {
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #Projects #ProjectsTitle h1 {
+    font-size: 50px;
+  }
+
+  #Projects #ProjectsTitle button {
+    padding: 0;
+    height: 50px;
+  }
+
+  #ProjectsBox #Box1 {
+    display: none;
+  }
+
+  #ProjectsBox #Box2 {
+    width: 320px;
+  }
+
+  #ProjectsBox #Box2 .BoxInfo h1 {
+    margin: 0 0 0 20px;
+    font-size: 50px;
+  }
+
+  #ProjectsBox #Box2 .BoxInfo span {
+    margin: 8px 0 0 20px;
+    font-size: 20px;
+  }
+
+  #ProjectsBox #Box3 {
+    display: none;
+  }
+
+  #ProjectsBox #Box4 {
+    width: 320px;
+    margin: 0;
+  }
+
+  #ProjectsBox #Box4 .BoxInfo h1 {
+    margin: 0 0 0 20px;
+    font-size: 50px;
+  }
+
+  #ProjectsBox #Box4 .BoxInfo span {
+    margin: 8px 0 0 20px;
+    font-size: 20px;
+  }
+
+  #ProjectsBox #Box5 {
+    width: 320px;
+  }
+
+  #ProjectsBox #Box5 .BoxInfo h1 {
+    margin: 0 0 0 20px;
+    font-size: 50px;
+  }
+
+  #ProjectsBox #Box5 .BoxInfo span {
+    margin: 8px 0 0 20px;
+    font-size: 20px;
+  }
+}

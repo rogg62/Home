@@ -284,3 +284,50 @@
     width: 500px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  #footer {
+    height: auto;
+    margin-top: 70px;
+  }
+
+  #TopFooter {
+    width: 320px;
+    height: auto;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #TopFooter #information {
+    width: 60%;
+    align-items: center;
+  }
+
+  #TopFooter #contact {
+    width: 80%;
+    margin: 10px 0 10px 0;
+    align-items: center;
+    border: 1px solid white;
+  }
+
+  #TopFooter #social {
+    width: 70%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #TopFooter #social #LinksImgs {
+    width: 100%;
+  }
+
+  #TopFooter #Logo {
+    margin: 0 0 20px 0;
+  }
+
+  #BottomFooter {
+    width: 320px;
+    height: auto;
+  }
+}

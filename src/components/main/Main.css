@@ -160,3 +160,48 @@
     height: auto;
   }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 501px) {
+  #main {
+    width: 320px;
+    height: auto;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  #main #ImgMain {
+    width: 100%;
+  }
+
+  #LeftMain {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  #LeftMainImgs {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #LeftMain #Img1 {
+    width: 100%;
+  }
+
+  #LeftMain #Img2 {
+    display: none;
+  }
+
+  #LeftMain p {
+    width: 90%;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    height: auto;
+  }
+}
+
+
+
