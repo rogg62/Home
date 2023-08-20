@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import FourthImg from "./assets/image 37.png";
 import FifthImg from "./assets/image 36.png";
@@ -91,6 +91,31 @@ const About = () => {
     }
   }, [width]);
 
+  function scrollFunction() {
+    if (
+      (document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50) &&
+      window.innerWidth > 700
+    ) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollFunction);
+
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, []);
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <section id="About" ref={main}>
       <div id="AboutInfo">
@@ -115,6 +140,9 @@ const About = () => {
         <img src={FourthImg} alt="" className="Img" />
         <img src={FifthImg} alt="" className="Img2" />
       </div>
+      <button id="myBtn" onClick={scrollToTop}>
+        Top
+      </button>
     </section>
   );
 };

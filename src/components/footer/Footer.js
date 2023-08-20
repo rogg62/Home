@@ -14,7 +14,7 @@ const Footer = () => {
     <footer id="footer">
       <div id="TopFooter">
         <div id="Logo">
-          <button>Logo Here</button>
+          <a href="#Title" id="BtnFooter">Logo Here</a>
         </div>
 
         <div id="information">
@@ -47,10 +47,10 @@ const Footer = () => {
           <h1>Social Media</h1>
           <div id="LinksImgs">
             <a href="Facebook">
-              <img src={Facebook} alt="" title="Facebook"/>
+              <img src={Facebook} alt="" title="Facebook" />
             </a>
             <a href="Twitter">
-              <img src={Twitter} alt="" title="Twitter"/>
+              <img src={Twitter} alt="" title="Twitter" />
             </a>
             <a href="Linkedin">
               <img src={Linkedin} alt="" title="Linkedin" />
