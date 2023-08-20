@@ -141,7 +141,12 @@ const About = () => {
         <img src={FifthImg} alt="" className="Img2" />
       </div>
       <button id="myBtn" onClick={scrollToTop}>
-        Top
+        <span
+          style={{ fontSize: "40px", color: "#333" }}
+          className="material-symbols-outlined"
+        >
+          arrow_upward
+        </span>
       </button>
     </section>
   );
